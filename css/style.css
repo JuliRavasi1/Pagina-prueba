@@ -5,40 +5,185 @@
 }
 
 main {
-  height: 1000vh;
+  height: 500vh;
 }
-
-.page1 {
+main .page1 {
   background-image: url(../images/fondo1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  clip-path: polygon(50% 100%, 0 75%, 0 0, 100% 0, 100% 75%);
-  height: 100vh;
+  background-attachment: fixed;
+  clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
+  height: 130vh;
   display: flex;
   align-content: center;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
-.page1 img {
-  height: 40px;
-  width: 40px;
+main .page1 img {
+  height: 80px;
+  width: 80px;
   margin-top: 10px;
 }
-.page1 h1 {
+main .page1 h1 {
+  text-align: center;
   margin-top: 30px;
   color: #ffb655;
   text-shadow: 1px 2px 2px #000;
   font-size: 3rem;
 }
-.page1 p {
+main .page1 p {
   margin-top: 8px;
   font-size: 1.2rem;
+  text-align: center;
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
 }
-
-.page2 {
+main .page2 {
+  height: 150vh;
+  clip-path: polygon(50% 50%, 100% 19%, 100% 75%, 0 100%, 0 19%);
+  transform: translate(0%, -50%);
+  background-color: #012066;
+}
+main .page2 .divtitle {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.5rem;
+}
+main .page2 .divtitle h2 {
+  margin-top: 525px;
+  color: #ffb655;
+  text-shadow: 1px 2px 2px #000;
+}
+main .page2 .divp {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  padding: 0 20px;
+  text-align: center;
+}
+main .page2 .divp p {
+  color: #fff;
+}
+main .page2 .btn {
+  text-align: center;
+  margin-top: 70px;
+}
+main .page2 .btn input {
+  padding: 1%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .page3 {
+  height: 200vh;
+  width: 100%;
+  background-image: url(../images/fondo2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+}
+main .page3 .divcity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .page3 .divcity img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
+main .page3 .divcity h3 {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 2rem;
+}
+main .page3 .divcity p {
+  padding: 0 50px;
+  text-align: center;
+}
+main .page3 .divimg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .page3 .divimg .divimg1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main .page3 .divimg .divimg1 img {
+  width: 300px;
+  height: 300px;
+}
+main .page3 .divimg .divimg1 p {
+  width: 300px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
+}
+main .page3 .divimg .divimg1 input {
+  padding: 1%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .page3 .divimg .divimg2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main .page3 .divimg .divimg2 img {
+  width: 300px;
+  height: 300px;
+}
+main .page3 .divimg .divimg2 p {
+  width: 300px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
+}
+main .page3 .divimg .divimg2 input {
+  padding: 1%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .page3 .divimg .divimg3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+main .page3 .divimg .divimg3 img {
+  width: 300px;
+  height: 300px;
+}
+main .page3 .divimg .divimg3 p {
+  width: 300px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
+}
+main .page3 .divimg .divimg3 input {
+  padding: 1%;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
