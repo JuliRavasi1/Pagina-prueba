@@ -44,8 +44,8 @@ main {
     }
 
     .page2 {
-        height: 150vh;
-        clip-path: polygon(50% 50%, 100% 19%, 100% 75%, 0 100%, 0 19%);
+        height: 200vh;
+        clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
         transform: translate(-0%, -50%);
         background-color: rgb(1, 32, 102);
 
@@ -58,7 +58,7 @@ main {
             font-size: 1.5rem;
 
             h2 {
-                margin-top: 525px;
+                margin-top: 50%;
                 color: rgba(255, 182, 85);
                 text-shadow: 1px 2px 2px #000;
             }
@@ -91,11 +91,12 @@ main {
     .page3 {
         height: 200vh;
         width: 100%;
+        clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
+        transform: translate(0, -74%);
         background-image: url(../images/fondo2.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         display: flex;
         flex-direction: column;
         gap: 50px;
@@ -110,7 +111,7 @@ main {
             img {
                 width: 80px;
                 height: 80px;
-                margin-top: 10px;
+                margin-top: 20%;
             }
 
             h3 {
@@ -122,6 +123,7 @@ main {
             p {
                 padding: 0 50px;
                 text-align: center;
+                font-size: 18px;
             }
         }
 
@@ -148,7 +150,7 @@ main {
                     font-size: 1.2rem;
                     text-align: center;
                     color: #fff;
-                    text-shadow: 1px 2px 2px #000;
+                    background: linear-gradient(rgba(102, 102, 102, 0.17), rgba(0, 0, 0, 0.17));
                 }
 
                 input {
@@ -211,6 +213,41 @@ main {
                     text-transform: uppercase;
                 }
             }
+        }
+    }
+
+    .page4 {
+        height: 150vh;
+        clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
+        transform: translate(0, -132%);
+        background-color: rgb(1, 32, 102);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            text-align: center;
+            padding-top: 20%;
+            padding-bottom: 5%;
+            font-size: 3rem;
+            color: rgba(255, 182, 85);
+            text-shadow: 1px 2px 2px #000;
+        }
+
+        .divcarousel {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            img {
+                width: 15%;
+                height: 15%;
+            }
+        }
+
+        input {
+            padding: 1%;
+            font-size: 18px;
+            text-transform: uppercase;
         }
     }
 }
