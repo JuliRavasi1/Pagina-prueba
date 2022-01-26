@@ -5,7 +5,7 @@
 }
 
 main {
-  height: 500vh;
+  height: 800vh;
 }
 main .page1 {
   background-image: url(../images/fondo1.jpg);
@@ -54,7 +54,7 @@ main .page2 .divtitle {
   font-size: 1.5rem;
 }
 main .page2 .divtitle h2 {
-  margin-top: 50%;
+  padding-top: 50%;
   color: #ffb655;
   text-shadow: 1px 2px 2px #000;
 }
@@ -96,11 +96,11 @@ main .page3 .divcity {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 16%;
 }
 main .page3 .divcity img {
   width: 80px;
   height: 80px;
-  margin-top: 20%;
 }
 main .page3 .divcity h3 {
   text-align: center;
@@ -118,72 +118,26 @@ main .page3 .divimg {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-main .page3 .divimg .divimg1 {
+main .page3 .divimg .divimg1, main .page3 .divimg .divimg3, main .page3 .divimg .divimg2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
 }
-main .page3 .divimg .divimg1 img {
+main .page3 .divimg .divimg1 img, main .page3 .divimg .divimg3 img, main .page3 .divimg .divimg2 img {
   width: 300px;
   height: 300px;
 }
-main .page3 .divimg .divimg1 p {
+main .page3 .divimg .divimg1 p, main .page3 .divimg .divimg3 p, main .page3 .divimg .divimg2 p {
   width: 300px;
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
   background: linear-gradient(rgba(102, 102, 102, 0.17), rgba(0, 0, 0, 0.17));
 }
-main .page3 .divimg .divimg1 input {
-  padding: 1%;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-main .page3 .divimg .divimg2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-main .page3 .divimg .divimg2 img {
-  width: 300px;
-  height: 300px;
-}
-main .page3 .divimg .divimg2 p {
-  width: 300px;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 2px 2px #000;
-}
-main .page3 .divimg .divimg2 input {
-  padding: 1%;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-main .page3 .divimg .divimg3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-main .page3 .divimg .divimg3 img {
-  width: 300px;
-  height: 300px;
-}
-main .page3 .divimg .divimg3 p {
-  width: 300px;
-  font-size: 1.2rem;
-  text-align: center;
-  color: #fff;
-  text-shadow: 1px 2px 2px #000;
-}
-main .page3 .divimg .divimg3 input {
-  padding: 1%;
+main .page3 .divimg .divimg1 input, main .page3 .divimg .divimg3 input, main .page3 .divimg .divimg2 input {
+  padding: 3%;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -199,24 +153,94 @@ main .page4 {
 main .page4 h3 {
   text-align: center;
   padding-top: 20%;
-  padding-bottom: 5%;
   font-size: 3rem;
   color: #ffb655;
   text-shadow: 1px 2px 2px #000;
 }
 main .page4 .divcarousel {
+  text-align: center;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 42%;
+  border: 2px solid red;
+  overflow: hidden;
 }
 main .page4 .divcarousel img {
-  width: 15%;
-  height: 15%;
+  animation: julieta 7s linear infinite;
+}
+main .page4 .divcarousel p {
+  animation: julieta 7s linear infinite;
+}
+main .page4 .divcarousel button {
+  background-color: #012066;
+  border: none;
+}
+main .page4 .divcarousel .guide1 {
+  padding: 4%;
+}
+main .page4 .divcarousel .guide1 img {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #fff;
+  border-radius: 70px;
+}
+main .page4 .divcarousel .guide1 p {
+  font-size: 20px;
+  padding-top: 5%;
+}
+main .page4 .divcarousel .guide2 {
+  padding: 4%;
+}
+main .page4 .divcarousel .guide2 img {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #fff;
+  border-radius: 70px;
+}
+main .page4 .divcarousel .guide2 p {
+  font-size: 20px;
+  padding-top: 5%;
+}
+main .page4 .divcarousel .guide3 {
+  padding: 4%;
+}
+main .page4 .divcarousel .guide3 img {
+  width: 140px;
+  height: 140px;
+  border: 2px solid #fff;
+  border-radius: 70px;
+}
+main .page4 .divcarousel .guide3 p {
+  font-size: 20px;
+  padding-top: 5%;
 }
 main .page4 input {
   padding: 1%;
   font-size: 18px;
   text-transform: uppercase;
+}
+@keyframes julieta {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(570px);
+  }
+  50% {
+    transform: translate(570px, -1200px);
+  }
+  75% {
+    transform: translate(-570px, -1200px);
+  }
+  100% {
+    transform: translate(-570px);
+  }
+}
+main .page4 {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

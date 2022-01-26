@@ -5,7 +5,7 @@
 }
 
 main {
-    height: 500vh;
+    height: 800vh;
 
     .page1 {
         background-image: url(../images/fondo1.jpg);
@@ -58,7 +58,7 @@ main {
             font-size: 1.5rem;
 
             h2 {
-                margin-top: 50%;
+                padding-top: 50%;
                 color: rgba(255, 182, 85);
                 text-shadow: 1px 2px 2px #000;
             }
@@ -107,11 +107,11 @@ main {
             flex-direction: column;
             align-items: center;
             flex-wrap: wrap;
+            padding-top: 16%;
 
             img {
                 width: 80px;
                 height: 80px;
-                margin-top: 20%;
             }
 
             h3 {
@@ -154,64 +154,18 @@ main {
                 }
 
                 input {
-                    padding: 1%;
+                    padding: 3%;
                     font-size: 18px;
                     text-transform: uppercase;
                 }
             }
 
             .divimg2 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 25px;
-
-                img {
-                    width: 300px;
-                    height: 300px;
-                }
-
-                p {
-                    width: 300px;
-                    font-size: 1.2rem;
-                    text-align: center;
-                    color: #fff;
-                    text-shadow: 1px 2px 2px #000;
-                }
-
-                input {
-                    padding: 1%;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                }
+                @extend .divimg1;
             }
 
             .divimg3 {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 25px;
-
-                img {
-                    width: 300px;
-                    height: 300px;
-                }
-
-                p {
-                    width: 300px;
-                    font-size: 1.2rem;
-                    text-align: center;
-                    color: #fff;
-                    text-shadow: 1px 2px 2px #000;
-                }
-
-                input {
-                    padding: 1%;
-                    font-size: 18px;
-                    text-transform: uppercase;
-                }
+                @extend .divimg1;
             }
         }
     }
@@ -227,27 +181,95 @@ main {
         h3 {
             text-align: center;
             padding-top: 20%;
-            padding-bottom: 5%;
+            // padding-bottom: 5%;
             font-size: 3rem;
             color: rgba(255, 182, 85);
             text-shadow: 1px 2px 2px #000;
         }
-
-        .divcarousel {
+        .divcarousel{
+            text-align: center;
             display: flex;
             flex-direction: row;
-            gap: 10px;
-
-            img {
-                width: 15%;
-                height: 15%;
+            justify-content: center;
+            align-items: center;
+            height: 40%;
+            width: 42%; 
+            border: 2px solid red;
+            overflow: hidden;
+            img{
+                animation: julieta 7s linear infinite;
+            }
+            p{
+                animation: julieta 7s linear infinite;
+            }
+            button{
+                background-color: rgb(1, 32, 102);
+                border: none;
+            }
+            .guide1{
+                padding: 4%;
+                img{
+                    width: 140px;
+                    height: 140px;
+                    border: 2px solid #fff;
+                    border-radius: 70px;
+                }
+                p{
+                    font-size: 20px;
+                    padding-top: 5%
+                }
+            }
+            .guide2{
+                padding: 4%;
+                img{
+                    width: 140px;
+                    height: 140px;
+                    border: 2px solid #fff;
+                    border-radius: 70px;
+                }
+                p{
+                    font-size: 20px;
+                    padding-top: 5%
+                }
+            }
+            .guide3{
+                padding: 4%;
+                img{
+                    width: 140px;
+                    height: 140px;
+                    border: 2px solid #fff;
+                    border-radius: 70px;
+                }
+                p{
+                    font-size: 20px;
+                    padding-top: 5%
+                }
             }
         }
-
-        input {
+        input{
             padding: 1%;
             font-size: 18px;
             text-transform: uppercase;
         }
+        @keyframes julieta{
+            0%{
+                transform: translate(0px);
+            }
+            25%{
+                transform: translate(570px);
+            }
+            50%{
+                transform: translate(570px, -1200px);
+            }
+            75%{
+                transform: translate(-570px, -1200px);
+            }
+            100%{
+                transform: translate(0-570px);
+            }
+        }
+    }
+    .page4{
+        color: #000;
     }
 }
