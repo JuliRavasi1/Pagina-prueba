@@ -30,7 +30,7 @@ main {
         h1 {
             text-align: center;
             margin-top: 30px;
-            color: rgba(255, 182, 85);
+            color: #173673;
             text-shadow: 1px 2px 2px #000;
             font-size: 3rem;
         }
@@ -47,7 +47,7 @@ main {
         height: 200vh;
         clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
         transform: translate(-0%, -50%);
-        background-color: rgb(1, 32, 102);
+        background-color: #fff;
 
         .divtitle {
             display: flex;
@@ -59,7 +59,7 @@ main {
 
             h2 {
                 padding-top: 50%;
-                color: rgba(255, 182, 85);
+                color: #173673;
                 text-shadow: 1px 2px 2px #000;
             }
         }
@@ -72,7 +72,7 @@ main {
             text-align: center;
 
             p {
-                color: #fff;
+                color: #000;
             }
         }
 
@@ -118,6 +118,8 @@ main {
                 text-align: center;
                 padding: 40px 0;
                 font-size: 2rem;
+                color: #173673;
+                text-shadow: 1px 2px 2px #000;
             }
 
             p {
@@ -181,95 +183,75 @@ main {
         h3 {
             text-align: center;
             padding-top: 20%;
-            // padding-bottom: 5%;
             font-size: 3rem;
-            color: rgba(255, 182, 85);
+            color: #F27244;
             text-shadow: 1px 2px 2px #000;
         }
-        .divcarousel{
-            text-align: center;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            height: 40%;
-            width: 42%; 
-            border: 2px solid red;
-            overflow: hidden;
-            img{
-                animation: julieta 7s linear infinite;
+        .container {
+            margin: 30px;
+            background-color: #fff;
+            width: 700px;
+            height: 400px;
+            padding: 30px;
+            .slider {
+                position: relative;
+                // width: 100%;
+                height: 80%;
+                border: 2px solid red;
+                    li {
+                        position: absolute;
+                        left: 42%;
+                        top: 25%;
+                        opacity: 0;
+                        transition: opacity .5s;
+                        // margin: 0;
+                        // padding: 0;
+                        list-style: none;
+                        img {
+                            width: 30%;
+                            height: 30%;
+                            // object-fit: cover;
+                            border: 4px solid #000;
+                            border-radius: 100%;
+                        }
+                        p{
+                            text-align: center;
+                            font-size: 24px;
+                            padding: 2%;
+                            transform: translate(-130px, -0px);
+                        }
+                    }
+                    li:first-child {
+                        opacity: 1;
+                    }
+                    li:target {
+                        opacity: 1;
+                    }
             }
-            p{
-                animation: julieta 7s linear infinite;
-            }
-            button{
-                background-color: rgb(1, 32, 102);
-                border: none;
-            }
-            .guide1{
-                padding: 4%;
-                img{
-                    width: 140px;
-                    height: 140px;
-                    border: 2px solid #fff;
-                    border-radius: 70px;
-                }
-                p{
-                    font-size: 20px;
-                    padding-top: 5%
-                }
-            }
-            .guide2{
-                padding: 4%;
-                img{
-                    width: 140px;
-                    height: 140px;
-                    border: 2px solid #fff;
-                    border-radius: 70px;
-                }
-                p{
-                    font-size: 20px;
-                    padding-top: 5%
-                }
-            }
-            .guide3{
-                padding: 4%;
-                img{
-                    width: 140px;
-                    height: 140px;
-                    border: 2px solid #fff;
-                    border-radius: 70px;
-                }
-                p{
-                    font-size: 20px;
-                    padding-top: 5%
-                }
-            }
-        }
-        input{
-            padding: 1%;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-        @keyframes julieta{
-            0%{
-                transform: translate(0px);
-            }
-            25%{
-                transform: translate(570px);
-            }
-            50%{
-                transform: translate(570px, -1200px);
-            }
-            75%{
-                transform: translate(-570px, -1200px);
-            }
-            100%{
-                transform: translate(0-570px);
+            .flechitas {
+                    text-align: center;
+                    margin: 20px;
+                    li {
+                        display: inline-block;
+                        text-align: center;
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        a {
+                            display: inline-block;
+                            color: #fff;
+                            text-decoration: none;
+                            background-color: grey;
+                            padding: 5px;
+                            width: 30px;
+                            height: 30px;
+                            font-size: 20px;
+                            border-radius: 100%;
+                        }
+                    }
             }
         }
     }
-    .page4{
-        color: #000;
-    }
+
 }
+
