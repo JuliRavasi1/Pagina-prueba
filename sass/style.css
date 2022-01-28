@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 main {
@@ -16,22 +16,22 @@ main .page1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
-  clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
+          clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
   height: 130vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .page1 img {
@@ -58,9 +58,9 @@ main .page1 p {
 main .page2 {
   height: 200vh;
   -webkit-clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
-  clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
+          clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
   -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   background-color: #fff;
 }
 
@@ -69,10 +69,10 @@ main .page2 .divtitle {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
   padding: 40px 0;
   font-size: 1.5rem;
@@ -90,10 +90,10 @@ main .page2 .divp {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-column-gap: 25px;
-  column-gap: 25px;
+          column-gap: 25px;
   padding: 0 20px;
   text-align: center;
 }
@@ -117,9 +117,9 @@ main .page3 {
   height: 200vh;
   width: 100%;
   -webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
-  clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
+          clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
   -webkit-transform: translate(0, -74%);
-  transform: translate(0, -74%);
+          transform: translate(0, -74%);
   background-image: url(../images/fondo2.jpg);
   background-position: center;
   background-size: cover;
@@ -129,8 +129,8 @@ main .page3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 50px;
   text-align: center;
 }
@@ -141,13 +141,13 @@ main .page3 .divcity {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 16%;
 }
 
@@ -176,13 +176,13 @@ main .page3 .divimg {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main .page3 .divimg .divimg1, main .page3 .divimg .divimg2, main .page3 .divimg .divimg3 {
@@ -191,13 +191,13 @@ main .page3 .divimg .divimg1, main .page3 .divimg .divimg2, main .page3 .divimg 
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -224,20 +224,20 @@ main .page3 .divimg .divimg1 input, main .page3 .divimg .divimg2 input, main .pa
 main .page4 {
   height: 150vh;
   -webkit-clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
-  clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
+          clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
   -webkit-transform: translate(0, -132%);
-  transform: translate(0, -132%);
+          transform: translate(0, -132%);
   background-color: #012066;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .page4 h3 {
@@ -267,8 +267,8 @@ main .page4 .container .slider li {
   left: 42%;
   top: 25%;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
   list-style: none;
 }
 
@@ -284,7 +284,7 @@ main .page4 .container .slider li p {
   font-size: 24px;
   padding: 2%;
   -webkit-transform: translate(-130px, 0px);
-  transform: translate(-130px, 0px);
+          transform: translate(-130px, 0px);
 }
 
 main .page4 .container .slider li:first-child {
@@ -323,10 +323,7 @@ main .page4 .container .flechitas li a {
 main .page5 {
   height: 150vh;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
+          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
   background-color: #000;
 }
-
-/*# sourceMappingURL=style.css.map */
-
 /*# sourceMappingURL=style.css.map */

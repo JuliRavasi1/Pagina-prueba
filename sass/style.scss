@@ -249,8 +249,13 @@ main {
                             border-radius: 100%;
                         }
                     }
-            }
+            } 
         }
+    }
+    .page5 {
+        height: 150vh;
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
+        background-color: #000;
     }
 
 }
