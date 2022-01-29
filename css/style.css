@@ -1,45 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 main {
-  height: 800vh;
+  height: 710vh;
 }
-
 main .page1 {
   background-image: url(../images/fondo1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
   clip-path: polygon(50% 100%, 0 65%, 0 0, 100% 0, 100% 65%);
   height: 130vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
   align-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
 main .page1 img {
   height: 80px;
   width: 80px;
   margin-top: 10px;
 }
-
 main .page1 h1 {
   text-align: center;
   margin-top: 30px;
@@ -47,115 +33,75 @@ main .page1 h1 {
   text-shadow: 1px 2px 2px #000;
   font-size: 3rem;
 }
-
 main .page1 p {
   margin-top: 8px;
   font-size: 1.2rem;
   text-align: center;
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
 }
-
 main .page2 {
   height: 200vh;
-  -webkit-clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
   clip-path: polygon(50% 50%, 100% 19%, 100% 76%, 0 100%, 0 19%);
-  -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   background-color: #fff;
 }
-
 main .page2 .divtitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
   padding: 40px 0;
   font-size: 1.5rem;
 }
-
 main .page2 .divtitle h2 {
   padding-top: 50%;
   color: #173673;
   text-shadow: 1px 2px 2px #000;
 }
-
 main .page2 .divp {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-column-gap: 25px;
   column-gap: 25px;
   padding: 0 20px;
   text-align: center;
 }
-
 main .page2 .divp p {
   color: #000;
 }
-
 main .page2 .btn {
   text-align: center;
   margin-top: 70px;
 }
-
 main .page2 .btn input {
   padding: 1%;
   font-size: 18px;
   text-transform: uppercase;
 }
-
 main .page3 {
   height: 200vh;
   width: 100%;
-  -webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
   clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 75%);
-  -webkit-transform: translate(0, -74%);
   transform: translate(0, -74%);
   background-image: url(../images/fondo2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: 50px;
   text-align: center;
 }
-
 main .page3 .divcity {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 16%;
 }
-
 main .page3 .divcity img {
   width: 80px;
   height: 80px;
 }
-
 main .page3 .divcity h3 {
   text-align: center;
   padding: 40px 0;
@@ -163,83 +109,49 @@ main .page3 .divcity h3 {
   color: #173673;
   text-shadow: 1px 2px 2px #000;
 }
-
 main .page3 .divcity p {
   padding: 0 50px;
   text-align: center;
   font-size: 18px;
 }
-
 main .page3 .divimg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-
-main .page3 .divimg .divimg1, main .page3 .divimg .divimg2, main .page3 .divimg .divimg3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+main .page3 .divimg .divimg1, main .page3 .divimg .divimg3, main .page3 .divimg .divimg2 {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 25px;
 }
-
-main .page3 .divimg .divimg1 img, main .page3 .divimg .divimg2 img, main .page3 .divimg .divimg3 img {
+main .page3 .divimg .divimg1 img, main .page3 .divimg .divimg3 img, main .page3 .divimg .divimg2 img {
   width: 300px;
   height: 300px;
 }
-
-main .page3 .divimg .divimg1 p, main .page3 .divimg .divimg2 p, main .page3 .divimg .divimg3 p {
+main .page3 .divimg .divimg1 p, main .page3 .divimg .divimg3 p, main .page3 .divimg .divimg2 p {
   width: 300px;
   font-size: 1.2rem;
   text-align: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(102, 102, 102, 0.17)), to(rgba(0, 0, 0, 0.17)));
   background: linear-gradient(rgba(102, 102, 102, 0.17), rgba(0, 0, 0, 0.17));
 }
-
-main .page3 .divimg .divimg1 input, main .page3 .divimg .divimg2 input, main .page3 .divimg .divimg3 input {
+main .page3 .divimg .divimg1 input, main .page3 .divimg .divimg3 input, main .page3 .divimg .divimg2 input {
   padding: 3%;
   font-size: 18px;
   text-transform: uppercase;
 }
-
 main .page4 {
   height: 150vh;
-  -webkit-clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 33%, 100% 75%, 0 100%);
-  -webkit-transform: translate(0, -132%);
   transform: translate(0, -132%);
   background-color: #012066;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
 main .page4 h3 {
   text-align: center;
   padding-top: 20%;
@@ -247,7 +159,6 @@ main .page4 h3 {
   color: #F27244;
   text-shadow: 1px 2px 2px #000;
 }
-
 main .page4 .container {
   margin: 30px;
   background-color: #fff;
@@ -255,51 +166,41 @@ main .page4 .container {
   height: 400px;
   padding: 30px;
 }
-
 main .page4 .container .slider {
   position: relative;
   height: 80%;
   border: 2px solid red;
 }
-
 main .page4 .container .slider li {
   position: absolute;
   left: 42%;
   top: 25%;
   opacity: 0;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   list-style: none;
 }
-
 main .page4 .container .slider li img {
   width: 30%;
   height: 30%;
   border: 4px solid #000;
   border-radius: 100%;
 }
-
 main .page4 .container .slider li p {
   text-align: center;
   font-size: 24px;
   padding: 2%;
-  -webkit-transform: translate(-130px, 0px);
   transform: translate(-130px, 0px);
 }
-
 main .page4 .container .slider li:first-child {
   opacity: 1;
 }
-
 main .page4 .container .slider li:target {
   opacity: 1;
 }
-
 main .page4 .container .flechitas {
   text-align: center;
   margin: 20px;
 }
-
 main .page4 .container .flechitas li {
   display: inline-block;
   text-align: center;
@@ -307,7 +208,6 @@ main .page4 .container .flechitas li {
   padding: 0;
   list-style: none;
 }
-
 main .page4 .container .flechitas li a {
   display: inline-block;
   color: #fff;
@@ -319,14 +219,92 @@ main .page4 .container .flechitas li a {
   font-size: 20px;
   border-radius: 100%;
 }
-
 main .page5 {
   height: 150vh;
-  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 40%);
+  clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 25%);
   background-color: #000;
+  transform: translate(0, -158%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-/*# sourceMappingURL=style.css.map */
+main .page5 h4 {
+  text-align: center;
+  padding-top: 16%;
+  font-size: 3rem;
+  color: #F27244;
+  text-shadow: 1px 2px 2px #000;
+  padding-bottom: 7%;
+}
+main .page5 .animales {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1%;
+}
+main .page5 .animales .roberta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .page5 .animales .roberta #roberta {
+  width: 400px;
+  height: auto;
+  padding-bottom: 2%;
+  z-index: 2;
+}
+main .page5 .animales .roberta p {
+  width: 65%;
+  text-align: center;
+  color: #fff;
+  padding: 3%;
+  font-size: 18px;
+}
+main .page5 .animales .roberta .border1 {
+  border: 4px dashed #F27244;
+  width: 400px;
+  height: 241.64px;
+  z-index: 1;
+  position: absolute;
+  transform: translate(50px, -50px);
+}
+main .page5 .animales .pepe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .page5 .animales .pepe #pepe {
+  width: 405px;
+  height: 241.64px;
+  padding-bottom: 2%;
+  z-index: 2;
+}
+main .page5 .animales .pepe p {
+  width: 65%;
+  color: #fff;
+  text-align: center;
+  padding: 3%;
+  font-size: 18px;
+}
+main .page5 .animales .pepe .border2 {
+  border: 4px dashed #F27244;
+  width: 400px;
+  height: 241.64px;
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50px, -50px);
+}
+main .page5 input {
+  margin-top: 8%;
+  padding: 1%;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+main .page6 {
+  height: 150vh;
+  background-color: #a52a2a;
+  clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0);
+  transform: translate(0, -178%);
+}
 
 /*# sourceMappingURL=style.css.map */
