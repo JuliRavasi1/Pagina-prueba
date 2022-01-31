@@ -312,40 +312,58 @@ main .page5 input {
   text-transform: uppercase;
 }
 main .page6 {
-  height: 150vh;
+  height: 500vh;
   background-color: #a52a2a;
   clip-path: polygon(50% 20%, 100% 0%, 100% 100%, 0 100%, 0 0);
-  transform: translate(0, -178%);
+  transform: translate(0, 0);
 }
 main .page6 .right {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000;
-  padding-top: 500px;
   height: 100%;
 }
 main .page6 .right .trianguloizq {
-  clip-path: polygon(0 0, 100% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 30%, 100% 100%, 0 100%, 0 50%);
   background-color: #173673;
-  width: 500px;
-  height: 400px;
-  transform: translate(500px, 0);
+  width: 800px;
+  height: 600px;
+  transform: translate(410px, 150px);
+  z-index: 3;
 }
 main .page6 .right .trianguloder {
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  clip-path: polygon(100% 30%, 100% 100%, 0 100%, 0 100%);
   background-color: #000;
   width: 800px;
-  height: 700px;
-  transform: translate(200px, 0);
+  height: 600px;
+  transform: translate(310px, 150px);
+  z-index: 2;
 }
 main .page6 .right .triangulocierre {
   clip-path: polygon(50% 100%, 0 0, 100% 0);
   background-color: #fff;
-  width: 1000px;
-  height: 500px;
-  transform: translate(-500px, -100px);
+  width: 1400px;
+  height: 420px;
+  transform: translate(-398px, 240px);
+  opacity: 1;
+}
+main .page6 .right .hojacontenedor {
+  height: 600px;
+  opacity: 0;
+}
+main .page6 .right .hoja {
+  position: absolute;
+  width: 705px;
+  height: 2000px;
+  transform: translate(-1105px, -1250px);
+}
+main .page6 .right .hoja::after {
+  content: "";
+  position: absolute;
+  width: 705px;
+  height: 2000px;
+  background: #F27244;
 }
 
 /*# sourceMappingURL=style.css.map */
